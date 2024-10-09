@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="primeiro projeto " />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="patrick goulart ferreira de matos" />
+  <title>Fórum</title>
+  <link rel="stylesheet" href="../style.css/fórum.css" />
+  <link rel="icon" type="image/x-icon" href="./img/GC__2_-removebg-preview.png">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div style="text-align: center;">
+      <button class="voltar" onclick="voltarParaHome()">Voltar</button>
+    </div>
+    <h1>Fórum</h1>
+    <h2>Bem vindo ao Fórum</h2>
+    <div style="text-align: center;">
+      <p>
+        Olá, bem vindo ao Fórum Epic World Games . Leia o paragrafo
+        abaixo antes de criar um ticket: Descreva com o máximo de informações o
+        seu problema, os detalhes são fundamentais para que possamos entender e
+        resolver com o máximo de eficiência. Sempre que possível, grave e anexe
+        um vídeo ou printscreen mostrando como tudo aconteceu, muitas vezes isso
+        é essencial para compreendermos tudo rapidamente. Lembrando: O suporte
+        por ticket é para retirar todas suas duvidas.
+      </p>
+    </div>
+
+    <h3>Criar ticket</h3>
+    <div style="text-align: center;">
+      <p class="pp">Preencha os Campos:</p>
+    </div>
+    <div style="text-align: center;">
+      <form>
+        <input class="int" type="text" placeholder="Digite seu nome" required />
+        <br />
+
+        <input class="int" type="text" placeholder="Sobrenome" required />
+        <br />
+
+        <input class="int" type="email" placeholder="Email" required />
+        <br />
+
+        <input class="int" type="text" placeholder="Assunto" />
+        <br />
+
+        <textarea name="textarea" rows="5" cols="30" minlength="20" maxlength="200">
+          Descrição</textarea>
+
+        <input type="file" />
+
+        <input class="button" type="button" value="Enviar" />
+      </form>
+    </div>
+    <div style="text-align: left;">
+      <button class="voltar" onclick="voltarParaHome()">Voltar</button>
+    </div>
+  </div>
+  </div>
+  <script src="./javascript/scripts.js"></script>
+  <script>
+    function voltarParaHome() {
+      window.location.href = "home.html";
+    }
+  </script>
+
+</body>
+
+</html>

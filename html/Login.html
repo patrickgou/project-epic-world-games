@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Astronaut-cuate.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css/Login.css">
+    <title>Login</title>
+    <script>
+        function fakeLogin(event) {
+            event.preventDefault();
+            const validUser = "admin";
+            const validPassword = "admin";
+            const usuarioInput = document.querySelector('input[name="usuario"]').value;
+            const senhaInput = document.querySelector('input[name="senha"]').value;
+
+            if (usuarioInput === validUser && senhaInput === validPassword) {
+                window.location.href = "user.html";
+            }
+            else {
+                alert("Usuário ou senha inválidos. Tente novamente")
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre para nosso time</h1>
+            <img class="left-login-img" src="../img/ilustracao-do-joystick-do-gamepad-do-controlador-de-jogos-cyberpunk_691560-5812.avif">
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <form onsubmit="fakeLogin(event)">
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário" value="usuario" required>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" value="senha" required>
+                    </div>
+
+                    <div class="lembrar-me">
+                        <label>Lembrar-me
+                            <input type="checkbox" name="lembrar-me" id="">
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-login">Entrar</button>
+                    <a class="cad" href="../html/cadastre-se.html">Cadastrar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

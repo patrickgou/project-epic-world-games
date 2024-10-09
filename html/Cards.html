@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="../style.css/Cards.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de notícias</title>
+</head>
+
+<body>
+  <div>
+    <h1>GAME NEWS</h1>
+  </div>
+  <h2>Últimas notícias sobre o mundo dos games:</h2>
+  <div class="container">
+    <a href="https://www.gamereactor.pt/black-myth-wukong-vendeu-mais-de-20-milhoes-de-copias-1188673/" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+      <img src="../img/wukong1.png">
+      <h2>Black Myth: Wukong</h2>
+      <div class="tooltip">Acesse aqui notícia</div>
+    </a>
+    <a href="https://www.msn.com/pt-br/entretenimento/jogos/data-de-lan%C3%A7amento-de-red-dead-redemption-para-pc-%C3%A9-finalmente-confirmada/ar-AA1rTKn4?ocid=msedgntphdr&cvid=ccb3daa9bb69431094beb5dc07384f57&ei=14" target="_blank" class="card" data-tooltip="Informações sobre Red Dead Redemption">
+      <img src="../img/rrddrr.jpeg">
+      <h2>Red Dead Redemption</h2>
+      <div class="tooltip">Informações sobre Red Dead Redemption</div>
+    </a>
+    <a href="https://www.msn.com/pt-br/entretenimento/jogos/remaster-de-the-last-of-us-esconde-um-easter-egg-na-tela-inicial-que-poucos-notaram/ar-AA1rMx5V?ocid=msedgntphdr&cvid=8abdb5d547a447128c578fd273cf4ee2&ei=15" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+      <img src="../img/tlou0.png">
+      <h2>The Last of Us</h2>
+      <div class="tooltip">Acesse aqui notícia</div>
+    </a>
+    <a href="https://www.msn.com/pt-br/tv/novelas/silent-hill-2-%C3%A9-lan%C3%A7ado-para-ps5-e-pc-veja-novidades/ar-AA1rUni8?ocid=msedgntphdr&cvid=8abdb5d547a447128c578fd273cf4ee2&ei=11" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+      <img src="../img/silent0.webp">
+      <h2>Silent Hill 2 REMAKE</h2>
+      <div class="tooltip">Acesse aqui notícia</div>
+    </a>
+    <a href="https://www.msn.com/pt-br/entretenimento/jogos/assassin-s-creed-mirage-chega-ao-steam-no-fim-de-outubro/ar-AA1rPl5f?ocid=msedgntphdr&cvid=5ef1271b7720457a90461544b7656c4b&ei=15" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+      <img src="../img/asas.jpeg">
+      <h2>Assassin's Creed Mirage</h2>
+      <div class="tooltip">Acesse aqui notícia</div>
+    </a>
+    <a href="https://www.msn.com/pt-br/noticias/ciencia-e-tecnologia/t%C3%ADtulo-de-terror-until-dawn-chega-%C3%A0-ps-5-e-pc/ar-AA1rUTRA?ocid=msedgntphdr&cvid=5ef1271b7720457a90461544b7656c4b&ei=24" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+      <img src="../img/ud0.jpeg">
+      <h2>Until Dawn</h2>
+      <div class="tooltip">Acesse aqui notícia</div>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', function () {
+        const tooltip = this.querySelector('.tooltip');
+        tooltip.style.visibility = 'visible';
+        tooltip.style.opacity = '1';
+      });
+
+      card.addEventListener('mouseleave', function () {
+        const tooltip = this.querySelector('.tooltip');
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = '0';
+      });
+    });
+  </script>
+
+</body>
+
+</html>

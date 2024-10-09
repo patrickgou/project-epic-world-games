@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+  }
+  
+  img {
+	max-width: 100%;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  a {
+	text-decoration: none;
+  }
+  
+  h2 {
+	font-size: 1.5em;
+	color: #333;
+  }
+  
+  p {
+	font-size: 1em;
+	color: #777;
+  }
+  
+  #ap {
+	font-size: 2em;
+	background-color: #201b2c;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	text-align: center;
+	float: left;
+	width: 100%;
+  }
+  
+  .cabecalho {
+	width: calc(100% + 16px);
+	margin-left: -8px;
+	margin-right: -8px;
+	background-color: #13c7ae;
+	position: relative;
+	height: 261px;
+	overflow: hidden;
+  }
+  
+  .cabecalho img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  
+  .logo a {
+	width: 90px;
+	height: 49px;
+	float: left;
+	background: url(../img/logo.png) no-repeat;
+	font-size: 0;
+  }
+  
+  .menu {
+	width: 100%;
+	float: left;
+	background-color: #201b2c;
+	padding: 18px 8%;
+  }
+  
+  .menu li {
+	float: left;
+  }
+  
+  .menu li a {
+	color: #fff;
+	margin-right: 25px;
+  }
+  
+  .menu li a:hover {
+	color: cyan;
+  }
+  
+  .social-icons {
+	float: right;
+  }
+  
+  .social-icons a {
+	color: #fff;
+	float: left;
+	margin-left: 12px;
+  }
+  
+  .btn-facebook:hover {
+	color: #3b5998;
+  }
+  
+  .btn-twitter:hover {
+	color: #54a4d6;
+  }
+  
+  .btn-google:hover {
+	color: #d73d32;
+  }
+  
+  .principal {
+	width: 100%;
+	float: left;
+	padding: 20px 8%;
+	background-color: #201b2c;
+  }
+  
+  .sobre {
+	width: 70%;
+	float: left;
+	padding: 20px;
+	background: rgba(85, 21, 131, 0.8);
+	color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	transition: transform 0.3s ease;
+  }
+  
+  .sobre h2 {
+	margin-bottom: 15px;
+	color: #ffffff;
+	text-shadow: 1px 1px 0px #000000, -1px -1px 0px #000000, 1px -1px 0px #000000,
+	  -1px 1px 0px #000000;
+  }
+  
+  .sobre p {
+	text-align: justify;
+	color: #ffffff;
+	text-shadow: 1px 1px 0px #000000, -1px -1px 0px #000000, 1px -1px 0px #000000,
+	  -1px 1px 0px #000000;
+  }
+  
+  .sobre img {
+	width: 50%;
+	float: left;
+	border-radius: 5px;
+	margin: 0 15px 15px 0;
+  }
+  
+  .sobre:hover {
+	transform: scale(1.02);
+	cursor: pointer;
+  }
+  
+  .sobre h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .sobre p {
+	text-align: justify;
+	margin-bottom: 15px;
+  }
+  
+  .sobre ul {
+	margin-top: 10px;
+	margin-bottom: 15px;
+  }
+  
+  .sobre li {
+	margin-bottom: 5px;
+  }
+  
+  .onde-estamos {
+	width: 30%;
+	float: right;
+	padding: 10px 20px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+  }
+  
+  .onde-estamos h2 {
+	margin-bottom: 5px;
+  }
+  
+  .onde-estamos iframe {
+	width: 100%;
+	height: 250px;
+	margin: 20px 0;
+  }
+  
+  .onde-estamos li {
+	color: #777;
+	margin-bottom: 10px;
+  }
+  
+  .onde-estamos i {
+	margin-right: 5px;
+  }
+  
+  html,
+  body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+  }
+  
+  body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+  }
+  
+  main {
+	flex: 1;
+  }
+  
+  .rodape {
+	width: 100%;
+	background-color: #000;
+	padding: 20px 8px;
+	color: #fff;
+	text-align: center;
+	margin-top: auto;
+  }
+  
+  .sair {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px 10px;
+	font-size: 12px;
+	background-color: #13c7ae;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+  
+  .sair:hover {
+	background-color: #0fa89d;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }

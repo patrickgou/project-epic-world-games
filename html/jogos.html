@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../style.css/Cards.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+</head>
+
+<body>
+    <div>
+        <h1>GAMES IMPERDÍVEIS</h1>
+    </div>
+    <h2>Jogos gratúitos que talvez você goste!</h2>
+    <div class="container">
+        <a href="https://www.tibia.com" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+            <img src="../img/tibia.jpeg">
+            <h2>Tibia</h2>
+            <div class="tooltip">Tibia</div>
+        </a>
+        <a href="https://www.fortnite.com/download?lang=pt-BR" target="_blank" class="card" data-tooltip="Fornite">
+            <img src="../img/fortnite.jpg">
+            <h2>Fortnite</h2>
+            <div class="tooltip">Informações sobre fornite</div>
+        </a>
+        <a href="https://www.callofduty.com/br/pt/warzone?utm_source=404&utm_medium=redirect&utm_campaign=04062023" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+            <img src="../img/cod.jpg">
+            <h2>Call of Duty: WARZONE</h2>
+            <div class="tooltip">Acesse aqui notícia</div>
+        </a>
+        <a href="https://among-us.softonic.com.br/" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+            <img src="../img/among.png">
+            <h2>Among Us</h2>
+            <div class="tooltip">Among Us</div>
+        </a>
+        <a href="https://store.steampowered.com/agecheck/app/985810/" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+            <img src="../img/gc.jpg">
+            <h2>Grand Chase</h2>
+            <div class="tooltip">Acesse aqui notícia</div>
+        </a>
+        <a href="https://www.counter-strike.net/news" target="_blank" class="card" data-tooltip="Acesse aqui notícia">
+            <img src="../img/cs.jpg">
+            <h2>Counter Strike</h2>
+            <div class="tooltip">Acesse aqui notícia</div>
+        </a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                const tooltip = this.querySelector('.tooltip');
+                tooltip.style.visibility = 'visible';
+                tooltip.style.opacity = '1';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                const tooltip = this.querySelector('.tooltip');
+                tooltip.style.visibility = 'hidden';
+                tooltip.style.opacity = '0';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
